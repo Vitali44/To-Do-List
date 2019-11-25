@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import TodoItems from "./TodoItems";
+import "./TodoList.css";
 
 class TodoList extends Component {
     //пропсы - чтобы в одном компоненте поместить данные и методы, которые с ним работают
@@ -31,7 +33,7 @@ addItem(e){
 
     console.log(this.state.items);
 
-    e.prventDefault();
+    e.preventDefault(); 
 }
     render() {
         return (
@@ -44,6 +46,7 @@ addItem(e){
                         <button type="submit">Add</button>
                     </form> 
                 </div>
+                <TodoItems entries={this.state.items}/>
             </div>
 
         );
