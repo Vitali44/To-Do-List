@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import TodoItems from "./TodoItems";
 import "./TodoList.css";
 
+
 class TodoList extends Component {
   //пропсы - чтобы в одном компоненте поместить данные и методы, которые с ним работают
   constructor(props) {
